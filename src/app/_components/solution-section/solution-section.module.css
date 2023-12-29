@@ -1,0 +1,43 @@
+.card {
+  background-color: lightgray;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.875rem;
+  height: 25rem;
+  width: 25rem;
+}
+.card-header {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.5rem 0.625rem;
+  background-color: gray;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.solution-container {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.solution-card-title {
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.solution-card-sub {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
+}

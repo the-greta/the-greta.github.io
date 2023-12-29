@@ -1,0 +1,44 @@
+.footer {
+  height: 208px;
+  padding: 0 4rem;
+  background-color: black;
+  color: white;
+}
+
+.main-info {
+  padding: 2.7rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-en {
+  color: lightgray;
+  margin-top: 0.5rem;
+}
+
+.tel {
+  margin-top: auto;
+  font-weight: 600;
+}
+
+.sub-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  padding: 1.5rem;
+}
+
+.copyright {
+  display: flex;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.dot {
+  display: inline-flex;
+  align-items: center;
+  margin: auto 0.75rem;
+}

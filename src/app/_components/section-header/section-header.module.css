@@ -1,0 +1,15 @@
+.section-header {
+  text-align: center;
+  color: gray;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.375rem;
+}
+
+.desc {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+}

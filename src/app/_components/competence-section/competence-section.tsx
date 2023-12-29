@@ -1,5 +1,13 @@
 import React from "react";
 
+import {
+  SectionDesc,
+  SectionHeader,
+  SectionTitle,
+} from "@/app/_components/section-header/section-title";
+
+import styles from "./competence-section.module.css";
+
 const CarouselItem = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
@@ -10,11 +18,13 @@ const CarouselItem = ({ children }: { children: React.ReactNode }) => {
 
 const CompetenceSection = () => {
   return (
-    <section>
-      <div>
-        <h2>competence</h2>
-        <p>주식회사 그레타는 국내 최고 전문가가 함께합니다.</p>
-      </div>
+    <section className={styles.section}>
+      <SectionHeader>
+        <SectionTitle>competence</SectionTitle>
+        <SectionDesc>
+          주식회사 그레타는 국내 최고 전문가가 함께합니다.
+        </SectionDesc>
+      </SectionHeader>
       <div>
         <CarouselItem>
           <span>통계학 전문 인력</span>

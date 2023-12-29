@@ -1,0 +1,40 @@
+.faq-card {
+  height: 256px;
+  width: 280px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: gray;
+}
+
+.tag {
+  padding: 0.5rem 0.625rem;
+  background-color: gray;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.faq-card-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.faq-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.faq-card-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3.6rem;
+}
