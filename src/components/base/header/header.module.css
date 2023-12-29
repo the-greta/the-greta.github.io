@@ -1,0 +1,22 @@
+.header {
+  height: 96px;
+}
+
+.container {
+  display: flex;
+  padding: 1rem 4rem;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  gap: 5rem;
+}
+
+.nav-menu {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.125rem;
+  display: inline-flex;
+  padding: 0.75rem 1.125rem;
+}

@@ -1,0 +1,28 @@
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sub {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.message {
+  word-break: keep-all;
+  font-size: 4.25rem;
+  text-align: center;
+}
+
+.emphasis {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
