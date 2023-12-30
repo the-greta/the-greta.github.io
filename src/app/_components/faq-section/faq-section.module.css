@@ -18,17 +18,20 @@
 .faq-card-title {
   font-weight: 700;
   font-size: 1.5rem;
+  display: inline-flex;
 }
 
 .faq-card-content {
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
+  padding: 8rem 2rem;
 }
 
 .faq-card-container {
@@ -36,5 +39,4 @@
   gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 3.6rem;
 }

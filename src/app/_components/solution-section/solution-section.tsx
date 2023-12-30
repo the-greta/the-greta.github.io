@@ -45,7 +45,6 @@ const SolutionSection = () => {
             All-in-One 합성데이터 생성 및 평가 솔루션
           </p>
         </SolutionCard>
-
         <div style={{ paddingTop: "2.5rem" }}>
           <SolutionCard tagList={["수집", "시각화"]}>
             <h3 className={styles["solution-card-title"]}>MVC</h3>

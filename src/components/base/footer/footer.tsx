@@ -6,13 +6,15 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles["main-info"]}>
-        <div>logo</div>
-        <div>
-          <p>서울특별시 서대문구 신촌로 141 은하빌딩 302호</p>
-          <p className={styles["address-en"]}>
-            EunHa Building 302, Sinchon-ro 141, Seodaemun-gu, Seoul-si, Republic
-            of Korea
-          </p>
+        <div className={styles["logo-address"]}>
+          <div>logo</div>
+          <div>
+            <p>서울특별시 서대문구 신촌로 141 은하빌딩 302호</p>
+            <p className={styles["address-en"]}>
+              EunHa Building 302, Sinchon-ro 141, Seodaemun-gu, Seoul-si,
+              Republic of Korea
+            </p>
+          </div>
         </div>
         <div className={styles.tel}>
           <span>Tel. 070-8648-1024</span>
