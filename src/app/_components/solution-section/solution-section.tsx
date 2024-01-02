@@ -54,10 +54,10 @@ const SolutionSection = () => {
           </SolutionCard>
         </div>
         <SolutionCard tagList={["분석", "예측"]}>
-          <h3 className={styles["solution-card-title"]}>Data </h3>
-          <p className={styles["solution-card-sub"]}>
-            클라이언트별 맞춤형 서비스
-          </p>
+          <h3 className={styles["solution-card-title"]}>
+            Data Analysis Consulting
+          </h3>
+          <p className={styles["solution-card-sub"]}>데이터 활용 컨설팅</p>
         </SolutionCard>
       </div>
     </section>

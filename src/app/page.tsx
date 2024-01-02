@@ -3,11 +3,9 @@ import FaqSection from "@/app/_components/faq-section/faq-section";
 import HeroSection from "@/app/_components/hero-section/hero-section";
 import SolutionSection from "@/app/_components/solution-section/solution-section";
 
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       <HeroSection />
       <SolutionSection />
       <CompetenceSection />
