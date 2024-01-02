@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -15,13 +16,20 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <div>GRETA</div>
+        <div>
+          <Image
+            src="/logo/greta_white.png"
+            alt="greta-logo"
+            height={60}
+            width={158}
+          />
+        </div>
         <nav className={styles.nav}>
-          <Link href="#">
-            <span className={styles["nav-menu"]}>about us</span>
+          <Link href="#" className={styles["nav-menu"]}>
+            about us
           </Link>
-          <Link href="#">
-            <span className={styles["nav-menu"]}>services</span>
+          <Link href="#" className={styles["nav-menu"]}>
+            services
           </Link>
         </nav>
         <div>

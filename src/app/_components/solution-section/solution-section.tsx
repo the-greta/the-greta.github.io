@@ -8,16 +8,38 @@ import {
 
 import styles from "./solution-section.module.css";
 
+const SOLUTION_CARD_LIST = [
+  {
+    title: "SYNTHEGRA",
+    desc: "All-in-One 합성데이터 생성 및 평가 솔루션",
+    tagList: ["합성", "증강"],
+    imgUrl: "",
+  },
+  {
+    title: "MVC",
+    desc: "기업 생태계 및 공급망 정보 시각화",
+    tagList: ["수집", "시각화"],
+    imgUrl: "",
+  },
+  {
+    title: "Data Analysis Consulting",
+    desc: "데이터 분석·활용 컨설팅",
+    tagList: ["분석", "예측"],
+    imgUrl: "",
+  },
+];
+
 const SolutionCard = ({
+  title,
+  desc,
   tagList,
-  children,
 }: {
+  title: string;
+  desc: string;
   tagList: string[];
-  children: React.ReactNode;
 }) => {
   return (
     <div className={styles.card}>
-      {/* <Image src="/test.jpg" alt="test" width={400} height={400} /> */}
       <div className={styles["card-header"]}>
         {tagList.map((tag, i) => (
           <span key={i} className={styles.tag}>
@@ -25,7 +47,10 @@ const SolutionCard = ({
           </span>
         ))}
       </div>
-      <div>{children}</div>
+      <div>
+        <h3 className={styles["solution-card-title"]}>{title}</h3>
+        <p className={styles["solution-card-sub"]}>{desc}</p>
+      </div>
     </div>
   );
 };
@@ -35,31 +60,17 @@ const SolutionSection = () => {
     <section className={styles.section}>
       <SectionHeader>
         <SectionTitle>solution</SectionTitle>
-        <SectionDesc>
-          주식회사 그레타는 고객 맞춤형 솔루션을 제공합니다.
-        </SectionDesc>
+        <SectionDesc>그레타의 데이터 솔루션</SectionDesc>
       </SectionHeader>
       <div className={styles["solution-container"]}>
-        <SolutionCard tagList={["합성", "증강"]}>
-          <h3 className={styles["solution-card-title"]}>synthegra</h3>
-          <p className={styles["solution-card-sub"]}>
-            All-in-One 합성데이터 생성 및 평가 솔루션
-          </p>
-        </SolutionCard>
-        <div style={{ paddingTop: "2.5rem" }}>
-          <SolutionCard tagList={["수집", "시각화"]}>
-            <h3 className={styles["solution-card-title"]}>MVC</h3>
-            <p className={styles["solution-card-sub"]}>
-              기업 생태계 정보 시각화
-            </p>
-          </SolutionCard>
-        </div>
-        <SolutionCard tagList={["분석", "예측"]}>
-          <h3 className={styles["solution-card-title"]}>
-            Data Analysis Consulting
-          </h3>
-          <p className={styles["solution-card-sub"]}>데이터 활용 컨설팅</p>
-        </SolutionCard>
+        {SOLUTION_CARD_LIST.map((card, i) => (
+          <SolutionCard
+            key={i}
+            title={card.title}
+            desc={card.desc}
+            tagList={card.tagList}
+          />
+        ))}
       </div>
     </section>
   );

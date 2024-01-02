@@ -13,12 +13,14 @@
 
 .contact-button:hover {
   color: #fff;
-  background-color: blue;
+  background-color: #00516f;
+  border-color: #00516f;
 }
 
 .header {
   position: fixed;
   top: 0;
+  z-index: 999;
   display: flex;
   align-items: center;
   width: 100%;
@@ -31,6 +33,7 @@
 .container {
   display: flex;
   flex: 1;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -41,8 +44,15 @@
 
 .nav-menu {
   display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.75rem 1.125rem;
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.nav-menu:hover {
+  color: #00516f;
 }
