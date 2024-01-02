@@ -17,6 +17,7 @@ const SolutionCard = ({
 }) => {
   return (
     <div className={styles.card}>
+      {/* <Image src="/test.jpg" alt="test" width={400} height={400} /> */}
       <div className={styles["card-header"]}>
         {tagList.map((tag, i) => (
           <span key={i} className={styles.tag}>
