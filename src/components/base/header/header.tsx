@@ -3,6 +3,14 @@ import React from "react";
 
 import styles from "./header.module.css";
 
+const ContactButton = () => {
+  return (
+    <Link href="#" className={styles["contact-button"]}>
+      contact us
+    </Link>
+  );
+};
+
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -17,7 +25,7 @@ const Header = () => {
           </Link>
         </nav>
         <div>
-          <button>contact us</button>
+          <ContactButton />
         </div>
       </div>
     </header>
