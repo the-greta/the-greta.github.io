@@ -73,17 +73,18 @@ const CompetenceCarousel = () => {
 
   return (
     <div>
-      <div className="embla" ref={emblaRef} style={{ overflow: "hidden" }}>
+      <div className={styles.container} ref={emblaRef}>
         <div className={styles["card-list-container"]}>
           {CAROUSEL_CARD_LIST.map((card, i) => (
-            <div key={i} className={styles["card-container"]}>
-              <CarouselCard
-                index={i}
-                title={card.title}
-                desc={card.desc}
-                imgUrl={card.imgUrl}
-              />
-            </div>
+            // <div key={i} className={styles["card-container"]}>
+            <CarouselCard
+              key={i}
+              index={i}
+              title={card.title}
+              desc={card.desc}
+              imgUrl={card.imgUrl}
+            />
+            // </div>
           ))}
         </div>
       </div>

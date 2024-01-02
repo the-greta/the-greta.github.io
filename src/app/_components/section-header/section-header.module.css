@@ -1,16 +1,18 @@
 .section-header {
   margin-bottom: 5rem;
-  color: #000;
   text-align: center;
 }
 
 .title {
   font-size: 3.375rem;
   font-weight: 700;
+  color: #333;
   text-transform: uppercase;
 }
 
 .desc {
   margin-top: 1.5rem;
   font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
 }

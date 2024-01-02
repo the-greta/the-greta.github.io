@@ -1,8 +1,10 @@
-.card-list-container {
-  display: flex;
+.container {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
 }
 
-.card-container {
-  min-width: 1200px;
-  padding-right: 2rem;
+.card-list-container {
+  display: flex;
+  margin-left: -10rem;
 }

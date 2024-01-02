@@ -16,14 +16,15 @@ const CarouselCard = ({
   desc: string;
 }) => {
   return (
-    <div className={styles.background}>
-      <Image src={imgUrl} alt="competence" width={1200} height={500} />
-      <Card className={styles.container}>
+    <div className={styles.container}>
+      <div className={styles.image}>
+        <Image src={imgUrl} alt="competence" fill objectFit="cover" />
+      </div>
+      <Card className={styles.card}>
         <CardHeader className={styles.header}>
           <div className={styles.title}>{title}</div>
           <div>
-            <span className={styles.index}>0{index + 1}</span>
-            /04
+            <span className={styles.index}>0{index + 1}</span> / 04
           </div>
         </CardHeader>
         <CardContent className={styles.content}>{desc}</CardContent>
