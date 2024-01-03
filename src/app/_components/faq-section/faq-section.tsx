@@ -1,3 +1,4 @@
+import { BarChart3, Boxes, DatabaseZap, Lightbulb } from "lucide-react";
 import React from "react";
 
 import {
@@ -8,28 +9,11 @@ import {
 
 import styles from "./faq-section.module.css";
 
-const FAQ_CARD_LIST = [
-  {
-    title: "합성데이터란?",
-  },
-  {
-    title: "MVC란?",
-  },
-  {
-    title: "합성데이터의 장단점?",
-  },
-  {
-    title: "합성데이터의 전망?",
-  },
-];
-
 const FaqCard = ({
   tag,
-  title,
   children,
 }: {
   tag: string;
-  title: string;
   children: React.ReactNode;
 }) => {
   return (
@@ -37,10 +21,7 @@ const FaqCard = ({
       <div>
         <span className={styles.tag}>{tag}</span>
       </div>
-      <div className={styles["faq-card-content"]}>
-        <span className={styles["faq-card-title"]}>{title}</span>
-        {children}
-      </div>
+      <div className={styles["faq-card-content"]}>{children}</div>
     </div>
   );
 };
@@ -53,11 +34,62 @@ const FaqSection = () => {
         <SectionDesc>자주 묻는 질문을 빠르게 만나보세요.</SectionDesc>
       </SectionHeader>
       <div className={styles["faq-card-container"]}>
-        {FAQ_CARD_LIST.map((card, i) => (
-          <FaqCard key={i} tag={`FAQ 0${i + 1}`} title={card.title}>
-            <div>아이콘</div>
-          </FaqCard>
-        ))}
+        <FaqCard tag={`FAQ 01`}>
+          <span className={styles["faq-card-title"]}>합성데이터란?</span>
+          <div className={styles["icon-wrap"]}>
+            <span className={styles.circle} />
+            <DatabaseZap
+              width={56}
+              height={56}
+              color="#00516f"
+              strokeWidth={1.8}
+              className={styles.icon}
+            />
+          </div>
+        </FaqCard>
+        <FaqCard tag={`FAQ 02`}>
+          <span className={styles["faq-card-title"]}>MVC란?</span>
+          <div className={styles["icon-wrap"]}>
+            <span className={styles.circle} />
+            <Boxes
+              width={56}
+              height={56}
+              color="#00516f"
+              strokeWidth={1.8}
+              className={styles.icon}
+            />
+          </div>
+        </FaqCard>
+        <FaqCard tag={`FAQ 03`}>
+          <span className={styles["faq-card-title"]}>
+            합성데이터의
+            <br />
+            장단점?
+          </span>
+          <div className={styles["icon-wrap"]}>
+            <span className={styles.circle} />
+            <Lightbulb
+              width={56}
+              height={56}
+              color="#00516f"
+              strokeWidth={1.8}
+              className={styles.icon}
+            />
+          </div>
+        </FaqCard>
+        <FaqCard tag={`FAQ 04`}>
+          <span className={styles["faq-card-title"]}>합성데이터의 전망?</span>
+          <div className={styles["icon-wrap"]}>
+            <span className={styles.circle} />
+            <BarChart3
+              width={56}
+              height={56}
+              color="#00516f"
+              strokeWidth={1.8}
+              className={styles.icon}
+            />
+          </div>
+        </FaqCard>
       </div>
     </section>
   );
