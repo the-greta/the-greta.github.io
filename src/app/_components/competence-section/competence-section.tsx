@@ -13,7 +13,7 @@ import styles from "./competence-section.module.css";
 
 const CompetenceSection = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="competence">
       <SectionHeader>
         <SectionTitle>competence</SectionTitle>
         <SectionDesc>
