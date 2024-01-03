@@ -18,13 +18,20 @@ const CarouselCard = ({
   return (
     <div className={styles.container}>
       <div className={styles.image}>
-        <Image src={imgUrl} alt="competence" fill objectFit="cover" />
+        <Image
+          src={imgUrl}
+          alt="competence"
+          fill
+          priority={true}
+          style={{ objectFit: "cover", objectPosition: "center" }}
+        />
       </div>
       <Card className={styles.card}>
         <CardHeader className={styles.header}>
           <div className={styles.title}>{title}</div>
-          <div>
-            <span className={styles.index}>0{index + 1}</span> / 04
+          <div className={styles.index}>
+            <span className={styles["current-index"]}>0{index + 1}</span>
+            <span className={styles["total-index"]}>/ 04</span>
           </div>
         </CardHeader>
         <CardContent className={styles.content}>{desc}</CardContent>
