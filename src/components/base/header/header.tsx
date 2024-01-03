@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 
 import styles from "./header.module.css";
 
@@ -13,12 +16,44 @@ const ContactButton = () => {
 };
 
 const Header = () => {
+  const pathname = usePathname();
+  const isLandingPage = pathname === "/";
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 200) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  const [isActive, setIsActive] = useState(false);
+  const handleMouseEnter = (): void => {
+    setIsActive(true);
+  };
+  const handleMouseLeave = (): void => {
+    setIsActive(false);
+  };
+
   return (
-    <header className={styles.header}>
+    <header
+      className={[
+        styles.header,
+        isLandingPage && !isScrolled ? styles.transparent : "",
+      ].join(" ")}
+    >
       <div className={styles.container}>
         <div>
           <Image
-            src="/logo/greta_white.png"
+            src={
+              isLandingPage && !isScrolled
+                ? "/logo/greta_white.png"
+                : "/logo/greta_black.png"
+            }
             alt="greta-logo"
             height={60}
             width={158}

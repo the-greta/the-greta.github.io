@@ -4,14 +4,15 @@
   justify-content: center;
   padding: 0.75rem 1.125rem;
   font-size: 0.875rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
-  border: 2px solid #000;
+  border: 1px solid #333;
   border-radius: 9999px;
   transition: 0.3s;
 }
 
 .contact-button:hover {
+  font-weight: 600;
   color: #fff;
   background-color: #00516f;
   border-color: #00516f;
@@ -26,8 +27,28 @@
   width: 100%;
   height: 96px;
   padding: 1rem 4rem;
+  color: #333;
+  background-color: white;
+  border-bottom: 1px solid rgba(51 51 51/ 50%);
+  transition: 0.2s;
+}
+
+.transparent {
+  color: #fff;
   background-color: transparent;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #fff;
+}
+
+.transparent .contact-button {
+  font-weight: 600;
+  border: 1px solid #ddd;
+}
+
+.transparent .contact-button:hover {
+  font-weight: 600;
+  color: #333;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .container {
@@ -54,5 +75,5 @@
 }
 
 .nav-menu:hover {
-  color: #00516f;
+  opacity: 0.6;
 }
