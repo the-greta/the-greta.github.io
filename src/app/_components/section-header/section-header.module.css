@@ -17,6 +17,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   color: #444;
+  word-break: keep-all;
 }
 
 .title-dark {
@@ -25,4 +26,28 @@
 
 .desc-dark {
   color: #fff;
+}
+
+@media screen and (width <= 1280px) {
+  .section-header {
+    max-width: 900px;
+    padding: 1.5rem 0 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .desc {
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+
+  .title-dark {
+    color: #fff;
+  }
+
+  .desc-dark {
+    color: #fff;
+  }
 }

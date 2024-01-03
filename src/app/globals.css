@@ -8,6 +8,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  line-height: 1.5;
   color: #333;
   scroll-behavior: smooth;
 }

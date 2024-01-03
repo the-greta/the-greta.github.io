@@ -55,8 +55,8 @@ const Header = () => {
                 : "/logo/greta_black.png"
             }
             alt="greta-logo"
-            height={60}
-            width={158}
+            height={45}
+            width={118}
           />
         </div>
         <nav className={styles.nav}>

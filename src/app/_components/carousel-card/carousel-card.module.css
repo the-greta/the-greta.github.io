@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  flex: 0 0 1360px;
+  flex: 0 0 calc(1200px + 10rem);
   min-width: 0;
   height: 500px;
   padding-left: 10rem;
@@ -14,7 +14,7 @@
 
 .card {
   position: absolute;
-  right: -1px;
+  right: 0;
   bottom: 0;
   width: 550px;
   height: 180px;
@@ -55,8 +55,38 @@
 .content {
   margin-top: 1.25rem;
   font-weight: 300;
-  line-height: 1.5rem;
   letter-spacing: -0.05rem;
   word-break: keep-all;
   white-space: pre-line;
+}
+
+@media screen and (width <= 1280px) {
+  .container {
+    flex: 0 0 calc(640px + 5rem);
+    height: 400px;
+    padding-left: 5rem;
+  }
+
+  .card {
+    width: 400px;
+    height: 160px;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .index {
+    font-weight: 500;
+  }
+
+  .current-index {
+    font-size: 1.25rem;
+  }
+
+  .content {
+    margin-top: 0.875rem;
+    font-size: 0.875rem;
+  }
 }

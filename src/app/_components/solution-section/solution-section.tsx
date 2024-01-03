@@ -75,7 +75,12 @@ const SolutionSection = () => {
         fill
         quality={100}
         priority={true}
-        style={{ objectFit: "cover", objectPosition: "center" }}
+        style={{
+          objectFit: "cover",
+          objectPosition: "center",
+          background:
+            "linear-gradient(to bottom, rgb(255 255 255 / 5%), rgb(0 0 0 / 80%) )",
+        }}
       />
       <div className={styles["section-container"]}>
         <SectionHeader>
