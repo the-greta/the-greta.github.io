@@ -55,7 +55,7 @@ const FaqSection = () => {
               width={56}
               height={56}
               color="#00516f"
-              strokeWidth={1.8}
+              strokeWidth={1.5}
               className={styles.icon}
             />
           </div>
