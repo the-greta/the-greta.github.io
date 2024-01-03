@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import styles from "./footer.module.css";
@@ -7,7 +9,14 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles["main-info"]}>
         <div className={styles["logo-address"]}>
-          <div>logo</div>
+          <div>
+            <Image
+              src="/logo/logo_mini.png"
+              alt="greta-logo"
+              height={60}
+              width={66}
+            />
+          </div>
           <div>
             <p>서울특별시 서대문구 신촌로 141 은하빌딩 302호</p>
             <p className={styles["address-en"]}>
@@ -26,9 +35,9 @@ const Footer = () => {
           <span>Design by DESIGNART</span>
         </div>
         <div className={styles["footer-menu"]}>
-          <button>이용약관</button>
+          <Link href="#">이용약관</Link>
           <span className={styles.dot}>·</span>
-          <button>개인정보처리방침</button>
+          <Link href="#">개인정보처리방침</Link>
         </div>
       </div>
     </footer>
