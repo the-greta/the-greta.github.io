@@ -8,11 +8,28 @@ import {
 
 import styles from "./faq-section.module.css";
 
+const FAQ_CARD_LIST = [
+  {
+    title: "합성데이터란?",
+  },
+  {
+    title: "MVC란?",
+  },
+  {
+    title: "합성데이터의 장단점?",
+  },
+  {
+    title: "합성데이터의 전망?",
+  },
+];
+
 const FaqCard = ({
   tag,
+  title,
   children,
 }: {
   tag: string;
+  title: string;
   children: React.ReactNode;
 }) => {
   return (
@@ -20,35 +37,27 @@ const FaqCard = ({
       <div>
         <span className={styles.tag}>{tag}</span>
       </div>
-      <div className={styles["faq-card-content"]}>{children}</div>
+      <div className={styles["faq-card-content"]}>
+        <span className={styles["faq-card-title"]}>{title}</span>
+        {children}
+      </div>
     </div>
   );
 };
 
 const FaqSection = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="faq">
       <SectionHeader>
         <SectionTitle>faq</SectionTitle>
         <SectionDesc>자주 묻는 질문을 빠르게 만나보세요.</SectionDesc>
       </SectionHeader>
       <div className={styles["faq-card-container"]}>
-        <FaqCard tag={"FAQ 01"}>
-          <span className={styles["faq-card-title"]}>합성데이터란?</span>
-          <div>아이콘</div>
-        </FaqCard>
-        <FaqCard tag={"FAQ 01"}>
-          <span className={styles["faq-card-title"]}>합성데이터란?</span>
-          <div>아이콘</div>
-        </FaqCard>
-        <FaqCard tag={"FAQ 01"}>
-          <span className={styles["faq-card-title"]}>합성데이터란?</span>
-          <div>아이콘</div>
-        </FaqCard>
-        <FaqCard tag={"FAQ 01"}>
-          <span className={styles["faq-card-title"]}>합성데이터란?</span>
-          <div>아이콘</div>
-        </FaqCard>
+        {FAQ_CARD_LIST.map((card, i) => (
+          <FaqCard key={i} tag={`FAQ 0${i + 1}`} title={card.title}>
+            <div>아이콘</div>
+          </FaqCard>
+        ))}
       </div>
     </section>
   );

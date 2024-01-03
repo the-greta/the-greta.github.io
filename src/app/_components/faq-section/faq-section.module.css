@@ -7,6 +7,12 @@
   padding: 30px;
   background-color: #fff;
   border: 1px solid #ddd;
+  outline: 4px solid transparent;
+  transition: 0.2s;
+}
+
+.faq-card:hover {
+  outline: 4px solid #00516f;
 }
 
 .tag {
@@ -31,7 +37,7 @@
 }
 
 .section {
-  min-height: 100vh;
+  min-height: calc(100vh - 220px);
   padding: 8rem 2rem;
   background-color: #f5f5f5;
 }
