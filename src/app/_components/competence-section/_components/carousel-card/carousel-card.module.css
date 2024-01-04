@@ -1,9 +1,9 @@
 .container {
   position: relative;
-  flex: 0 0 calc(1200px + 10rem);
+  flex: 0 0 calc(100% - 2rem);
   min-width: 0;
-  height: 500px;
-  padding-left: 10rem;
+  height: 480px;
+  padding-left: 1rem;
 }
 
 .image {
@@ -16,9 +16,9 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 550px;
+  width: 100%;
   height: 180px;
-  padding: 2.25rem 1.875rem;
+  padding: 1.5rem;
   color: #fff;
   background-image: linear-gradient(
     130deg,
@@ -29,13 +29,14 @@
 
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-size: 0.875rem;
   font-weight: 700;
 }
 
 .title {
-  font-size: 1.875rem;
+  font-size: var(--text-xl);
 }
 
 .index {
@@ -53,14 +54,13 @@
 }
 
 .content {
-  margin-top: 1.25rem;
+  margin-top: 0.5rem;
   font-weight: 300;
   letter-spacing: -0.05rem;
   word-break: keep-all;
-  white-space: pre-line;
 }
 
-@media screen and (width <= 1280px) {
+@media screen and (768px <= width < 1280px) {
   .container {
     flex: 0 0 calc(640px + 5rem);
     height: 400px;
@@ -70,7 +70,6 @@
   .card {
     width: 400px;
     height: 160px;
-    padding: 1.5rem;
   }
 
   .title {
@@ -88,5 +87,34 @@
   .content {
     margin-top: 0.875rem;
     font-size: 0.875rem;
+    white-space: pre-line;
+  }
+}
+
+@media screen and (1280px <= width) {
+  .container {
+    flex: 0 0 calc(1200px + 10rem);
+    height: 500px;
+    padding-left: 10rem;
+  }
+
+  .card {
+    width: 550px;
+    height: 180px;
+    padding: 2.25rem 1.875rem;
+  }
+
+  .title {
+    font-size: 1.875rem;
+  }
+
+  .current-index {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    margin-top: 1.25rem;
+    font-size: 1rem;
+    white-space: pre-line;
   }
 }

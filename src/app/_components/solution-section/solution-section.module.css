@@ -1,51 +1,12 @@
-.container {
-  position: relative;
-  width: 25rem;
-  height: 25rem;
-}
-
-.container:nth-child(2) {
-  margin-top: 2.5rem;
-}
-
-.card {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  padding: 1.875rem;
-  background: linear-gradient(
-    to bottom,
-    rgb(255 255 255 / 5%),
-    rgb(0 0 0 / 80%)
-  );
-}
-
-.card-header {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.tag {
-  padding: 0.5rem 0.625rem;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #fff;
-  background-color: rgb(0 0 0 / 50%);
-}
-
 .section {
   position: relative;
-  min-height: 100vh;
 }
 
 .section-container {
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 8rem 2rem;
+  padding: 4rem 2rem;
   background: linear-gradient(
     to bottom,
     rgb(255 255 255 / 5%),
@@ -60,17 +21,8 @@
   margin: 0 auto;
 }
 
-.solution-card-title {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #eee;
-}
-
-.solution-card-sub {
-  margin-top: 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  color: #eee;
-  word-break: keep-all;
-  white-space: pre-line;
+@media screen and (768px <= width) {
+  .section-container {
+    padding: 8rem 2rem;
+  }
 }

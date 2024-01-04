@@ -15,7 +15,7 @@
 }
 
 .container {
-  padding: 6rem 0 5rem;
+  padding: 2rem 0;
   margin: 0 auto;
   color: #fff;
   text-align: center;
@@ -23,13 +23,13 @@
 
 .sub {
   display: block;
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: var(--text-lg);
   font-weight: 600;
 }
 
 .message {
-  font-size: 4.2rem;
+  font-size: var(--text-2xl);
   text-align: center;
   word-break: keep-all;
 }
@@ -37,8 +37,9 @@
 .emphasis {
   display: inline-block;
   margin-top: 0.5rem;
-  font-size: 4.375rem;
+  font-size: 3rem;
   font-weight: 700;
+  word-break: keep-all;
 }
 
 .scroll {
@@ -51,4 +52,23 @@
   color: #fff;
   text-transform: uppercase;
   word-break: keep-all;
+}
+
+@media screen and (768px <= width) {
+  .container {
+    padding: 6rem 0 5rem;
+  }
+
+  .sub {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .message {
+    font-size: 4.2rem;
+  }
+
+  .emphasis {
+    font-size: 4.375rem;
+  }
 }

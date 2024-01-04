@@ -42,6 +42,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : "button";
 
     const styleClassName = [
+      styles.base,
       variant && styles[variant],
       size && styles[size],
     ].join(" ");

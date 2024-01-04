@@ -6,65 +6,10 @@ import {
   SectionHeader,
   SectionTitle,
 } from "@/app/_components/section-header/section-title";
+import SolutionCard from "@/app/_components/solution-section/_components/solution-card/solution-card";
+import { SOLUTION_CARD_LIST } from "@/app/_components/solution-section/_const/const";
 
 import styles from "./solution-section.module.css";
-
-const SOLUTION_CARD_LIST = [
-  {
-    title: "SYNTHEGRA",
-    desc: "All-in-One 합성데이터\n생성 및 평가 솔루션",
-    tagList: ["합성", "증강"],
-    imgUrl: "/solution/solution1.jpg",
-  },
-  {
-    title: "MVC",
-    desc: "기업 생태계 및 공급망 정보 시각화",
-    tagList: ["수집", "시각화"],
-    imgUrl: "/solution/solution2.jpg",
-  },
-  {
-    title: "Data Analysis Consulting",
-    desc: "데이터 분석·활용 컨설팅",
-    tagList: ["분석", "예측"],
-    imgUrl: "/solution/solution3.jpg",
-  },
-];
-
-const SolutionCard = ({
-  title,
-  desc,
-  tagList,
-  imgUrl,
-}: {
-  title: string;
-  desc: string;
-  tagList: string[];
-  imgUrl: string;
-}) => {
-  return (
-    <div className={styles.container}>
-      <Image
-        src={imgUrl}
-        alt="solution"
-        fill
-        style={{ objectFit: "cover", objectPosition: "center" }}
-      />
-      <div className={styles.card}>
-        <div className={styles["card-header"]}>
-          {tagList.map((tag, i) => (
-            <span key={i} className={styles.tag}>
-              # {tag}
-            </span>
-          ))}
-        </div>
-        <div>
-          <h3 className={styles["solution-card-title"]}>{title}</h3>
-          <p className={styles["solution-card-sub"]}>{desc}</p>
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const SolutionSection = () => {
   return (

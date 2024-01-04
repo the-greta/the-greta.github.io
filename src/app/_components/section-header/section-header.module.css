@@ -1,20 +1,19 @@
 .section-header {
-  max-width: 1200px;
-  padding: 1.5rem 0 5rem;
+  padding: 1.5rem 0 2rem;
   margin: 0 auto;
   text-align: center;
 }
 
 .title {
-  font-size: 3.375rem;
+  font-size: var(--text-3xl);
   font-weight: 700;
   color: #333;
   text-transform: uppercase;
 }
 
 .desc {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: var(--text-md);
   font-weight: 500;
   color: #444;
   word-break: keep-all;
@@ -28,26 +27,18 @@
   color: #fff;
 }
 
-@media screen and (width <= 1280px) {
+@media screen and (1024px <= width) {
   .section-header {
-    max-width: 900px;
-    padding: 1.5rem 0 2rem;
+    max-width: 1024px;
+    padding: 1.5rem 0 5rem;
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 3.375rem;
   }
 
   .desc {
-    margin-top: 0;
-    font-size: 1.25rem;
-  }
-
-  .title-dark {
-    color: #fff;
-  }
-
-  .desc-dark {
-    color: #fff;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
   }
 }

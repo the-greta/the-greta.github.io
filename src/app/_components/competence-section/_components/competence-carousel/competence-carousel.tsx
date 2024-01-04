@@ -2,7 +2,7 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import React from "react";
 
-import CarouselCard from "@/app/_components/carousel-card/carousel-card";
+import CarouselCard from "@/app/_components/competence-section/_components/carousel-card/carousel-card";
 import { CarouselApi } from "@/components/ui/carousel/carousel";
 
 import styles from "./competence-carousel.module.css";
@@ -25,7 +25,7 @@ const CAROUSEL_CARD_LIST = [
   },
   {
     title: "논문 및 연구활동",
-    desc: "관련 논문을 다수 발표해 국내 최상위 전문지식을 확보하고 있습니다.\n현장 경험과 학문적 업데이트를 바탕으로 최신 데이터 사이언스 기술을 활용합니다.",
+    desc: "관련 논문을 다수 발표해 국내 최상위 전문지식을 확보하고 있습니다. \n현장 경험과 학문적 업데이트를 바탕으로 최신 데이터 사이언스 기술을 활용합니다.",
     imgUrl: "/competence/competence4.jpg",
   },
 ];

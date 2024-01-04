@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import CompetenceCarousel from "@/app/_components/competence-carousel/competence-carousel";
+import CompetenceCarousel from "@/app/_components/competence-section/_components/competence-carousel/competence-carousel";
 import {
   SectionDesc,
   SectionHeader,

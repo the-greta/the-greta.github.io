@@ -25,17 +25,17 @@ const CarouselCard = ({
           priority={true}
           style={{ objectFit: "cover", objectPosition: "center" }}
         />
+        <Card className={styles.card}>
+          <CardHeader className={styles.header}>
+            <div className={styles.title}>{title}</div>
+            <div className={styles.index}>
+              <span className={styles["current-index"]}>0{index + 1}</span>
+              <span className={styles["total-index"]}>/ 04</span>
+            </div>
+          </CardHeader>
+          <CardContent className={styles.content}>{desc}</CardContent>
+        </Card>
       </div>
-      <Card className={styles.card}>
-        <CardHeader className={styles.header}>
-          <div className={styles.title}>{title}</div>
-          <div className={styles.index}>
-            <span className={styles["current-index"]}>0{index + 1}</span>
-            <span className={styles["total-index"]}>/ 04</span>
-          </div>
-        </CardHeader>
-        <CardContent className={styles.content}>{desc}</CardContent>
-      </Card>
     </div>
   );
 };
