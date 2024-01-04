@@ -13,13 +13,15 @@
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
+    "axios": "^1.6.4",
     "classnames": "^2.5.1",
     "embla-carousel-autoplay": "^8.0.0-rc17",
     "embla-carousel-react": "^8.0.0-rc17",
     "lucide-react": "^0.303.0",
     "next": "14.0.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sharp": "^0.33.1"
   },
   "devDependencies": {
     "@types/node": "^20",

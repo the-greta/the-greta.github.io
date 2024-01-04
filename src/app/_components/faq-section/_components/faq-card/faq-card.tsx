@@ -11,6 +11,11 @@ const FaqCard = ({
   title: string;
   children: React.ReactNode;
 }) => {
+  // const test = async () => {
+  //   const res = await fetch("/api");
+  //   console.log(res);
+  // };
+
   return (
     <div className={styles.card}>
       <div className={styles.header}>

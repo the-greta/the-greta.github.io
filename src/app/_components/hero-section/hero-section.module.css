@@ -1,8 +1,6 @@
 .section {
   position: relative;
   height: 100vh;
-  background-image: url("/hero-bg.jpg");
-  background-size: cover;
 }
 
 .overlay {
