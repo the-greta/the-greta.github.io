@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -7,13 +6,13 @@ import styles from "./hero-section.module.css";
 const HeroSection = () => {
   return (
     <section className={styles.section} id="hero">
-      <Image
+      {/* <Image
         src="/hero-bg.jpg"
         alt="hero-bg"
         fill
         style={{ objectFit: "cover", objectPosition: "center" }}
         className={styles["bg-image"]}
-      />
+      /> */}
       <div className={styles.overlay}>
         <div className={styles.container}>
           <span className={styles.sub}>Great Era of Data</span>
