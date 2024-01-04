@@ -44,9 +44,11 @@ const Header = () => {
 
   const [showMobileNav, setShowMobileNav] = useState(false);
 
+  const condition = isLandingPage && !isScrolled;
+
   const styleClassName = [
     styles.header,
-    isLandingPage && !isScrolled ? styles.transparent : "",
+    condition ? styles.transparent : "",
   ].join(" ");
 
   return (
@@ -54,11 +56,7 @@ const Header = () => {
       <div className={styles.container}>
         <div>
           <Image
-            src={
-              isLandingPage && !isScrolled
-                ? "/logo/greta_white.png"
-                : "/logo/greta_black.png"
-            }
+            src={condition ? "/logo/greta_white.png" : "/logo/greta_black.png"}
             alt="greta-logo"
             height={45}
             width={118}
@@ -77,7 +75,7 @@ const Header = () => {
         <div>
           <ContactButton />
         </div>
-        <div>
+        <div className={[styles["mobile-menu-button"]].join(" ")}>
           <Button
             variant="ghost"
             size="icon"
@@ -85,7 +83,7 @@ const Header = () => {
               setShowMobileNav((o) => !o);
             }}
           >
-            <Menu className={styles["mobile-menu-button"]} />
+            <Menu width={24} height={24} color={condition ? "#fff" : "#000"} />
           </Button>
         </div>
       </div>
@@ -95,14 +93,16 @@ const Header = () => {
           showMobileNav ? styles.open : styles.close,
         ].join(" ")}
       >
-        <nav>
-          <Link href="#" className={styles["nav-menu"]}>
+        <nav className={styles["mobile-nav"]}>
+          <Link href="#" className={styles["mobile-nav-menu"]}>
             about us
           </Link>
-          <Link href="#" className={styles["nav-menu"]}>
+          <Link href="#" className={styles["mobile-nav-menu"]}>
             services
           </Link>
-          <ContactButton />
+          <Link href="#" className={styles["mobile-nav-menu"]}>
+            contact us
+          </Link>
         </nav>
       </div>
     </header>

@@ -45,6 +45,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       styles.base,
       variant && styles[variant],
       size && styles[size],
+      className,
     ].join(" ");
 
     return <Comp className={styleClassName} ref={ref} {...props} />;
