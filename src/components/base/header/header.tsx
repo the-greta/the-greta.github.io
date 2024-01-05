@@ -64,10 +64,10 @@ const Header = () => {
         </div>
 
         <nav className={styles.nav}>
-          <Link href="#" className={styles["nav-menu"]}>
+          <Link href="/about" className={styles["nav-menu"]}>
             about us
           </Link>
-          <Link href="#" className={styles["nav-menu"]}>
+          <Link href="/services/synthegra" className={styles["nav-menu"]}>
             services
           </Link>
         </nav>
@@ -94,10 +94,18 @@ const Header = () => {
         ].join(" ")}
       >
         <nav className={styles["mobile-nav"]}>
-          <Link href="#" className={styles["mobile-nav-menu"]}>
+          <Link
+            href="/about"
+            className={styles["mobile-nav-menu"]}
+            onClick={() => setShowMobileNav(false)}
+          >
             about us
           </Link>
-          <Link href="#" className={styles["mobile-nav-menu"]}>
+          <Link
+            href="/services/synthegra"
+            className={styles["mobile-nav-menu"]}
+            onClick={() => setShowMobileNav(false)}
+          >
             services
           </Link>
           <Link href="#" className={styles["mobile-nav-menu"]}>

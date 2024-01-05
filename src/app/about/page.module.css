@@ -1,0 +1,39 @@
+.container {
+  padding: 0 2rem;
+  background-color: #fff;
+}
+
+.container > div {
+  padding: 1.5rem 0 5rem;
+  background-color: #fff;
+}
+
+.title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.05em;
+}
+
+.message {
+  margin-top: 1rem;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.content {
+  margin-top: 3rem;
+}
+
+.signature {
+  margin-top: 3rem;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  text-align: right;
+}
+
+.signature span {
+  font-size: var(--text-md);
+}

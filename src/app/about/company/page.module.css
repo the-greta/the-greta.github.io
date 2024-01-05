@@ -1,0 +1,26 @@
+.container {
+  padding: 0 2rem;
+}
+
+.container > div {
+  padding: 1.5rem 0 5rem;
+}
+
+.container h3 {
+  font-size: var(--text-xl);
+}
+
+.message {
+  margin-top: 1rem;
+  font-size: var(--text-lg);
+  font-weight: 700;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
