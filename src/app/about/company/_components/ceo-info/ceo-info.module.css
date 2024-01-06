@@ -5,7 +5,8 @@
 
 .name {
   font-size: var(--text-lg);
-  font-weight: 600;
+  font-weight: 700;
+  color: hsl(var(--primary));
 }
 
 .career {

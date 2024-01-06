@@ -1,0 +1,9 @@
+.partnership {
+  margin-top: 1rem;
+}
+
+.name {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: hsl(var(--primary));
+}
