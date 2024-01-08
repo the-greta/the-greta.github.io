@@ -55,26 +55,30 @@ const Header = () => {
     <header className={styleClassName}>
       <div className={styles.container}>
         <div>
-          <Image
-            src={condition ? "/logo/greta_white.png" : "/logo/greta_black.png"}
-            alt="greta-logo"
-            height={45}
-            width={118}
-          />
+          <Link href="/" className={styles["nav-menu"]}>
+            <Image
+              src={
+                condition ? "/logo/greta_white.png" : "/logo/greta_black.png"
+              }
+              alt="greta-logo"
+              height={45}
+              width={118}
+            />
+          </Link>
         </div>
 
         <nav className={styles.nav}>
-          <Link href="/about" className={styles["nav-menu"]}>
+          <Link href="/about/ceo-message" className={styles["nav-menu"]}>
             about us
           </Link>
-          <Link href="/services/synthegra" className={styles["nav-menu"]}>
+          <Link href="/solutions/synthegra" className={styles["nav-menu"]}>
             services
           </Link>
         </nav>
 
-        <div>
+        {/* <div>
           <ContactButton />
-        </div>
+        </div> */}
         <div className={[styles["mobile-menu-button"]].join(" ")}>
           <Button
             variant="ghost"
@@ -95,22 +99,22 @@ const Header = () => {
       >
         <nav className={styles["mobile-nav"]}>
           <Link
-            href="/about"
+            href="/about/ceo-message"
             className={styles["mobile-nav-menu"]}
             onClick={() => setShowMobileNav(false)}
           >
             about us
           </Link>
           <Link
-            href="/services/synthegra"
+            href="/solutions/synthegra"
             className={styles["mobile-nav-menu"]}
             onClick={() => setShowMobileNav(false)}
           >
             services
           </Link>
-          <Link href="#" className={styles["mobile-nav-menu"]}>
+          {/* <Link href="#" className={styles["mobile-nav-menu"]}>
             contact us
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </header>

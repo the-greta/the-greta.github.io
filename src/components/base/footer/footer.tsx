@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 import styles from "./footer.module.css";
@@ -34,11 +33,11 @@ const Footer = () => {
           <span>©GRETA Inc. All rights reserved.</span>
           <span>Design by DESIGNART</span>
         </div>
-        <div className={styles["footer-menu"]}>
+        {/* <div className={styles["footer-menu"]}>
           <Link href="#">이용약관</Link>
           <span className={styles.dot}>·</span>
           <Link href="#">개인정보처리방침</Link>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
