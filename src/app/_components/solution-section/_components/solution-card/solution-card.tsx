@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import styles from "./solution-card.module.css";
@@ -8,14 +9,16 @@ const SolutionCard = ({
   desc,
   tagList,
   imgUrl,
+  link,
 }: {
   title: string;
   desc: string;
   tagList: string[];
   imgUrl: string;
+  link?: string;
 }) => {
   return (
-    <div className={styles.container}>
+    <Link className={styles.container} href={link || "#solution"}>
       <Image
         src={imgUrl}
         alt="solution"
@@ -35,7 +38,7 @@ const SolutionCard = ({
           <p className={styles["solution-card-sub"]}>{desc}</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

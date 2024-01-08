@@ -40,6 +40,7 @@ const SolutionSection = () => {
               desc={card.desc}
               tagList={card.tagList}
               imgUrl={card.imgUrl}
+              link={card.link}
             />
           ))}
         </div>
