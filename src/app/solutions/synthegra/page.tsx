@@ -6,7 +6,7 @@ import { SolutionDescCard } from "@/app/solutions/_components/solution-desc-card
 
 import styles from "./page.module.css";
 
-export const SYNTEHGRA_SERVICE_LIST = [
+const SYNTEHGRA_SERVICE_LIST = [
   {
     title: "데이터 합성",
     desc: "원데이터와 유사한 구조를 가지도록 가상(simulated)의 합성데이터를 생성",

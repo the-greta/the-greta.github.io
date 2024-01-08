@@ -5,7 +5,7 @@ import { SolutionDescCard } from "@/app/solutions/_components/solution-desc-card
 
 import styles from "./page.module.css";
 
-export const MVC_SERVICE_LIST = [
+const MVC_SERVICE_LIST: { title: string; desc: string }[] = [
   {
     title: "전체 산업지도의 시각화",
     desc: "국내 다양한 산업들을 투자 관점에서 분류하고 이종 산업들의 관계와 \n상대적 위치를 조망할 수 있는 시각화된 지도를 제공",
@@ -32,10 +32,6 @@ const MVCPage = () => {
         <div className={styles.content}>
           <div>
             <h3>제공 서비스</h3>
-            {/* <p className={styles.p}>
-              SYNTHEGRA는 데이터 분석을 위한 자동화된 시스템을 제공하며, 통계 및
-              AI 모델을 활용하여 데이터를 생성합니다.
-            </p> */}
             <div className={styles.desc}>
               {MVC_SERVICE_LIST.map((solutionDesc, si) => (
                 <SolutionDescCard
