@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 import PageTitle from "@/app/about/_components/page-title/page-title";
@@ -82,7 +81,18 @@ const SynthegraPage = () => {
 
           <div>
             <h3>Technical Engine</h3>
-            <Image src="/engine.png" alt="engine" width={800} height={420} />
+            <div style={{ position: "relative", height: "420px" }}>
+              <img
+                src="/engine.png"
+                alt="engine"
+                style={{
+                  objectFit: "scale-down",
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>

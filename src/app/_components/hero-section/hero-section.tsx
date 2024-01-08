@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -7,11 +6,16 @@ import styles from "./hero-section.module.css";
 const HeroSection = () => {
   return (
     <section className={styles.section} id="hero">
-      <Image
+      <img
         src="/hero-bg.jpg"
         alt="hero-bg"
-        fill
-        style={{ objectFit: "cover", objectPosition: "center" }}
+        style={{
+          position: "absolute",
+          height: "100%",
+          width: "100%",
+          objectFit: "cover",
+          objectPosition: "center",
+        }}
         className={styles["bg-image"]}
       />
       <div className={styles.overlay}>

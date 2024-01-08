@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { Card, CardContent, CardHeader } from "@/components/ui/card/card";
 
 import styles from "./carousel-card.module.css";
@@ -18,12 +16,16 @@ const CarouselCard = ({
   return (
     <div className={styles.container}>
       <div className={styles.image}>
-        <Image
+        <img
           src={imgUrl}
           alt="competence"
-          fill
-          priority={true}
-          style={{ objectFit: "cover", objectPosition: "center" }}
+          style={{
+            position: "absolute",
+            height: "100%",
+            width: "100%",
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
         />
         <Card className={styles.card}>
           <CardHeader className={styles.header}>

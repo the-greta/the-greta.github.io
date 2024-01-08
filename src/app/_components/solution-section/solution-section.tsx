@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 import {
@@ -14,13 +13,13 @@ import styles from "./solution-section.module.css";
 const SolutionSection = () => {
   return (
     <section className={styles.section} id="solution">
-      <Image
+      <img
         src="/solution/solution-bg.jpg"
         alt="solution-bg"
-        fill
-        quality={100}
-        priority={true}
         style={{
+          position: "absolute",
+          height: "100%",
+          width: "100%",
           objectFit: "cover",
           objectPosition: "center",
           background:

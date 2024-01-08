@@ -1,7 +1,6 @@
 "use client";
 
 import { Menu } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -56,7 +55,7 @@ const Header = () => {
       <div className={styles.container}>
         <div>
           <Link href="/" className={styles["nav-menu"]}>
-            <Image
+            <img
               src={
                 condition ? "/logo/greta_white.png" : "/logo/greta_black.png"
               }

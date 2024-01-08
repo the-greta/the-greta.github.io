@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -19,11 +18,16 @@ const SolutionCard = ({
 }) => {
   return (
     <Link className={styles.container} href={link || "#solution"}>
-      <Image
+      <img
         src={imgUrl}
         alt="solution"
-        fill
-        style={{ objectFit: "cover", objectPosition: "center" }}
+        style={{
+          position: "absolute",
+          height: "100%",
+          width: "100%",
+          objectFit: "cover",
+          objectPosition: "center",
+        }}
       />
       <div className={styles.card}>
         <div className={styles["card-header"]}>
