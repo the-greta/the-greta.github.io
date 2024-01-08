@@ -1,4 +1,7 @@
 .partnership {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   margin-top: 1rem;
 }
 
@@ -6,4 +9,17 @@
   font-size: var(--text-xl);
   font-weight: 700;
   color: hsl(var(--primary));
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  line-height: 1.7;
+}
+
+.detail {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #666;
 }

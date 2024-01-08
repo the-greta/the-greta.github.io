@@ -6,10 +6,12 @@
   font-size: var(--text-4xl);
   font-weight: 700;
   letter-spacing: -0.05em;
+  white-space: pre-line;
 }
 
 .title > p {
   font-size: var(--text-lg);
   font-weight: 500;
   color: #00516f;
+  white-space: pre-line;
 }

@@ -42,18 +42,25 @@ const Partnership = () => {
       <div className={styles.partnership}>
         {PARTNERSHIP_LIST.map((partnership, pi) => (
           <div key={pi}>
-            <div className={styles.name}>{partnership.name}</div>
-            <div>
-              {partnership.contentList.map((content, ci) => (
-                <div key={ci}>
-                  <div>{content.desc}</div>
-                  <div>
-                    {content.detailList?.map((detail, di) => (
-                      <div key={di}>{detail}</div>
-                    ))}
+            <div className={styles.circle}>
+              <span className={styles.name}>{partnership.name}</span>
+            </div>
+            <div className={styles.content}>
+              {partnership.contentList.map(
+                (
+                  content: { desc: string; detailList?: string[] },
+                  ci: number
+                ) => (
+                  <div key={ci}>
+                    <div className={styles.desc}>{content.desc}</div>
+                    <div className={content.detailList && styles.detail}>
+                      {content.detailList?.map((detail, di) => (
+                        <div key={di}>{detail}</div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                )
+              )}
             </div>
           </div>
         ))}

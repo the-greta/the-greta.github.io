@@ -14,14 +14,20 @@
 }
 
 .nav {
+  height: 2.5rem;
+  background-color: #fafafa;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.wrap {
   display: flex;
   gap: 1rem;
   align-items: center;
-  height: 2.5rem;
+  max-width: 900px;
+  height: 100%;
   padding: 0.25rem 2rem;
+  margin: 0 auto;
   font-size: var(--font-sm);
-  background-color: #fafafa;
-  border-bottom: 1px solid #eaeaea;
 }
 
 .name {
@@ -30,11 +36,20 @@
   color: #00516f;
 }
 
-.link {
+.wrap > a {
   white-space: nowrap;
   transition: 0.2s;
 }
 
-.link:hover {
-  opacity: 0.8;
+.active {
+  color: hsl(var(--primary));
+}
+
+.inactive {
+  opacity: 0.6;
+}
+
+.inactive:hover {
+  color: hsl(var(--primary) / 80%);
+  opacity: 1;
 }
