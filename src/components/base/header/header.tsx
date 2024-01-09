@@ -54,7 +54,7 @@ const Header = () => {
     <header className={styleClassName}>
       <div className={styles.container}>
         <div>
-          <Link href="/" className={styles["nav-menu"]}>
+          <Link href="/">
             <img
               src={
                 condition ? "/logo/greta_white.png" : "/logo/greta_black.png"
@@ -80,6 +80,7 @@ const Header = () => {
         </div> */}
         <div className={[styles["mobile-menu-button"]].join(" ")}>
           <Button
+            id="mobile-nav-button"
             variant="ghost"
             size="icon"
             onClick={() => {
@@ -109,7 +110,7 @@ const Header = () => {
             className={styles["mobile-nav-menu"]}
             onClick={() => setShowMobileNav(false)}
           >
-            services
+            solutions
           </Link>
           {/* <Link href="#" className={styles["mobile-nav-menu"]}>
             contact us

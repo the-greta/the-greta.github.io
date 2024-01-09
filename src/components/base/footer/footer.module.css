@@ -54,7 +54,8 @@
 
 .copyright {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
   justify-content: center;
   color: #777;
 }
@@ -98,6 +99,8 @@
   }
 
   .copyright {
+    flex-direction: row;
+    gap: 1.5rem;
     justify-content: flex-start;
   }
 

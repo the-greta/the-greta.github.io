@@ -1,6 +1,13 @@
 .section {
   position: relative;
   height: 100vh;
+  max-height: 1200px;
+}
+
+@media screen and (768px <= width) {
+  .section {
+    max-height: none;
+  }
 }
 
 .overlay {
@@ -16,9 +23,15 @@
 
 .container {
   padding: 2rem 0;
-  margin: 0 auto;
+  margin: -8rem auto 0;
   color: #fff;
   text-align: center;
+}
+
+@media screen and (768px <= width) {
+  .container {
+    margin: -8rem auto 0;
+  }
 }
 
 .sub {
@@ -44,14 +57,32 @@
 
 .scroll {
   position: absolute;
-  bottom: 66px;
+  bottom: 8rem;
   display: inline-flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
   justify-content: center;
   width: 100%;
+  margin: 0 auto;
   font-size: 0.875rem;
   color: #fff;
   text-transform: uppercase;
   word-break: keep-all;
+  opacity: 0.8;
+  transition: 0.2s ease-in-out;
+}
+
+.scroll > span > svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+.scroll:hover {
+  opacity: 0.6;
+}
+
+.scroll:hover > span > svg {
+  transform: translateY(6px);
 }
 
 @media screen and (768px <= width) {
@@ -70,5 +101,9 @@
 
   .emphasis {
     font-size: 4.375rem;
+  }
+
+  .scroll {
+    bottom: 2rem;
   }
 }

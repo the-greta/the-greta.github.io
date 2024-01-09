@@ -1,3 +1,4 @@
+import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -29,7 +30,10 @@ const HeroSection = () => {
         </div>
       </div>
       <Link href="#solution" className={styles.scroll}>
-        scroll down
+        <span>scroll down</span>
+        <span>
+          <ChevronDown />
+        </span>
       </Link>
     </section>
   );
