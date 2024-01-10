@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+
+import { useParams } from "next/navigation";
+import React, { useEffect } from "react";
 
 import PageTitle from "@/app/about/_components/page-title/page-title";
 import { FAQ_LIST } from "@/app/solutions/faq/_const/const";
@@ -12,6 +15,24 @@ import {
 import styles from "./page.module.css";
 
 const FAQPage = () => {
+  const params = useParams();
+
+  useEffect(() => {
+    const handleAccordionOpen = () => {
+      const hash = decodeURIComponent(window.location.hash.substring(1));
+
+      if (hash) {
+        const accordionItem = document.getElementById(hash);
+        if (accordionItem) {
+          console.log(hash);
+          console.log(accordionItem);
+          accordionItem.setAttribute("data-state", "open");
+        }
+      }
+    };
+    handleAccordionOpen();
+  }, [params]);
+
   return (
     <section className={styles.container}>
       <div>
@@ -23,7 +44,9 @@ const FAQPage = () => {
             <Accordion type="multiple">
               {FAQ_LIST.map((faq, si) => (
                 <AccordionItem key={si} value={`${si}`}>
-                  <AccordionTrigger>{faq.title}</AccordionTrigger>
+                  <AccordionTrigger id={faq.title}>
+                    {faq.title}
+                  </AccordionTrigger>
                   <AccordionContent>{faq.desc}</AccordionContent>
                 </AccordionItem>
               ))}

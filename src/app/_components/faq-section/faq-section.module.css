@@ -34,19 +34,17 @@
 }
 
 .icon-wrap {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  margin-left: auto;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 52px;
+  height: 52px;
 }
 
 .circle {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: block;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   background-color: #00516f;
   border-radius: 50%;
   opacity: 0.05;
@@ -63,7 +61,7 @@
 @media screen and (768px <= width) {
   .icon-wrap {
     width: 74px;
-    height: 77px;
+    height: 74px;
   }
 
   .circle {

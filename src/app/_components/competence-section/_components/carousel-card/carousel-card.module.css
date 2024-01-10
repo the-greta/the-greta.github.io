@@ -55,6 +55,7 @@
 
 .content {
   margin-top: 0.5rem;
+  font-size: 14px;
   font-weight: 300;
   letter-spacing: -0.05rem;
   word-break: keep-all;
@@ -86,7 +87,7 @@
 
   .content {
     margin-top: 0.875rem;
-    font-size: 0.875rem;
+    font-size: 14px;
     white-space: pre-line;
   }
 }

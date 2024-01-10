@@ -22,7 +22,7 @@ const FaqCard = ({
         <span className={styles.tag}>{tag}</span>
         <span className={styles.title}>{title}</span>
       </div>
-      <div className={styles.content}>{children}</div>
+      {children}
     </div>
   );
 };
