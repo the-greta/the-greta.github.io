@@ -10,7 +10,7 @@ import styles from "./competence-carousel.module.css";
 const CAROUSEL_CARD_LIST = [
   {
     title: "통계학 전문 인력",
-    desc: "당사의 DS팀은 통계학 석박 과정을 이수 중이거나\n완료한 전문인력으로 구성돼 있습니다.",
+    desc: "당사의 DS팀은 데이터사이언스 석박 과정을 이수 중이거나\n완료한 전문인력으로 구성돼 있습니다.",
     imgUrl: "/competence/competence1.jpg",
   },
   {
