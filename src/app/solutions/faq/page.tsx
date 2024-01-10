@@ -17,19 +17,15 @@ import styles from "./page.module.css";
 const FAQPage = () => {
   const params = useParams();
 
-  useEffect(() => {
-    const handleAccordionOpen = () => {
-      const hash = decodeURIComponent(window.location.hash.substring(1));
+  const handleAccordionOpen = () => {
+    const hash = decodeURIComponent(window.location.hash.substring(1));
+    if (hash) {
+      const targetElement = document.getElementById(hash);
+      targetElement && targetElement.click();
+    }
+  };
 
-      if (hash) {
-        const accordionItem = document.getElementById(hash);
-        if (accordionItem) {
-          console.log(hash);
-          console.log(accordionItem);
-          accordionItem.setAttribute("data-state", "open");
-        }
-      }
-    };
+  useEffect(() => {
     handleAccordionOpen();
   }, [params]);
 

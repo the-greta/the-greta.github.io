@@ -43,7 +43,7 @@ const FaqSection = () => {
             </div>
           </FaqCard>
         </Link>
-        <Link href={"/solutions/faq#합성데이터의장단점?"}>
+        <Link href={"/solutions/faq#합성데이터의 장단점?"}>
           <FaqCard tag="FAQ 03" title={`합성데이터의 \n장단점?`}>
             <div className={styles["icon-wrap"]}>
               <span className={styles.circle} />
@@ -55,7 +55,7 @@ const FaqSection = () => {
             </div>
           </FaqCard>
         </Link>
-        <Link href={"/solutions/faq#합성데이터의전망?"}>
+        <Link href={"/solutions/faq#합성데이터의 전망?"}>
           <FaqCard tag="FAQ 04" title="합성데이터의 전망?">
             <div className={styles["icon-wrap"]}>
               <span className={styles.circle} />

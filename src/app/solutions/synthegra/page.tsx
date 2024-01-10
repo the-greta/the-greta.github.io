@@ -78,6 +78,21 @@ const SynthegraPage = () => {
               ))}
             </div>
           </div>
+          <div>
+            <h3>Technical Engine</h3>
+            <div style={{ position: "relative", height: "420px" }}>
+              <img
+                src="/appendix.png"
+                alt="appendix"
+                style={{
+                  objectFit: "scale-down",
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
