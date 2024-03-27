@@ -33,6 +33,18 @@ const SynthegraPage = () => {
           desc="All-in-One 합성데이터 생성 및 평가 솔루션"
         />
 
+        <div className={styles["video-container"]}>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CUis7om4ZVc?si=fb4QaOUBRAALUd2V"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
+
         <div className={styles.content}>
           <div>
             <p className={styles.p}>
