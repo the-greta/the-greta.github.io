@@ -7,8 +7,6 @@ import Partnership from "@/app/about/company/_components/partnership/partnership
 
 import styles from "./page.module.css";
 
-
-
 const CeoMessagePage = () => {
   return (
     <section className={styles.container}>

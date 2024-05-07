@@ -1,0 +1,40 @@
+.section {
+  padding: 2rem 2rem 6rem;
+  background-color: #e9e9e9;
+}
+
+@media screen and (1280px <= width) {
+  .section {
+    min-height: calc(100vh - 220px);
+    padding: 4rem 2rem 6rem;
+  }
+}
+
+.container {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+}
+
+.card .title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: hsl(var(--primary));
+}
+
+.card .title:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.card .news {
+  font-size: var(--text-sm);
+  opacity: 0.8;
+}
