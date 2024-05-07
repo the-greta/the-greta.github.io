@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 import {
@@ -42,6 +43,11 @@ const SolutionSection = () => {
               link={card.link}
             />
           ))}
+        </div>
+        <div className={styles["solution-buttons"]}>
+          <Link href={"/e-catalog.pdf"} target="_blank" download>
+            E-카탈로그 다운로드
+          </Link>
         </div>
       </div>
     </section>
