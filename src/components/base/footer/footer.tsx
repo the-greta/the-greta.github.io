@@ -17,15 +17,10 @@ const Footer = () => {
             />
           </div>
           <div>
-            <p>서울특별시 서대문구 신촌로 141 은하빌딩 302호</p>
-            <p className={styles["address-en"]}>
-              EunHa Building 302, Sinchon-ro 141, Seodaemun-gu, Seoul-si,
-              Republic of Korea
-            </p>
+            <p>Contact</p>
+            <p className={styles.copyright}>Email: adm_archer@the-greta.com</p>
+            <p className={styles.copyright}>Tel: 070-8648-1024</p>
           </div>
-        </div>
-        <div className={styles.tel}>
-          <span>Tel. 070-8648-1024</span>
         </div>
       </div>
       <div className={styles["sub-info"]}>

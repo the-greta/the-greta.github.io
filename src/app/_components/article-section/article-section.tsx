@@ -11,6 +11,18 @@ import styles from "./article-section.module.css";
 
 const ARTICLE_LIST = [
   {
+    news: "매거진한경",
+    title: "[한국보건산업진흥원 2025년 창업도약패키지 선정기업] 합성데이터 솔루션 개발 및 통계·데이터 컨설팅 진행하는 ‘그레타’",
+    url: "https://magazine.hankyung.com/job-joy/article/202512039702d",
+    date: "2025.12.03",
+  },
+  {
+    news: "머니투데이",
+    title: "연세대, CES 2026 참가…'혁신 스타트업 4곳' 글로벌 도전 돕는다",
+    url: "https://www.mt.co.kr/future/2025/12/02/2025112716551497769",
+    date: "2025.12.02",
+  },
+  {
     news: "중앙일보",
     title: "그레타, 올인원 합성데이터 상용 솔루션 ‘Synthegra’ 선봬",
     url: "https://www.joongang.co.kr/article/25245384",
