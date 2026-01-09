@@ -1,6 +1,8 @@
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+
+import { Button } from "@/components/ui/button/button";
 
 import styles from "./hero-section.module.css";
 
@@ -28,6 +30,12 @@ const HeroSection = () => {
             <span className={styles.emphasis}>전문 솔루션 기업</span>
           </span>
         </div>
+        <Button variant="outline" className={styles.external}>
+          <Link href="https://eldo-pi.vercel.app/" target="_blank">
+            <span>ELDO</span>
+            <ExternalLink />
+          </Link>
+        </Button>
       </div>
       <Link href="#solution" className={styles.scroll}>
         <span>scroll down</span>
